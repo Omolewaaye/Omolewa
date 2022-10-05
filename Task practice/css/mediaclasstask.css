@@ -1,0 +1,96 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    background-color: blue;
+    padding: 64px 16px 48px 16px;
+}
+.topsection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.heading {
+    flex-basis: 100%;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.filter-btn {
+    padding: 13px 16px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
+.subheading {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6d6e73;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 1024px) {
+    .heading {
+        flex-basis: auto;
+        margin-bottom: 0%;
+    }
+    .filter-btn {
+        display: none;
+    }
+}
+
+
+
+.animated-btn {
+    background-color:  red;
+    color: white;
+    border: 1px solid black;
+    padding: 16px;
+    cursor: pointer;
+    width: 0;
+    transition: background-color, color, width;
+    transition-duration: 3s, 6s;
+    transition-delay: 2s,6s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: absolute;
+    left: 20%;
+ 
+}
+
+.animated-btn:hover {
+    background-color: aqua;
+    color: black;
+    border-color: pink;
+    width: 100px;
+    transform: scale(2);
+
+
+}
+.animated-div{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transition: width 5s;
+    background-position: center;
+    background-size: contain;
+    background-color: green;
+    animation-name: anyname;
+    animation-duration: 5s;
+
+    
+}
+@keyframes anyname {
+ from {background-color: green;}
+ from {left: 0; top: 100px;}
+ to {background-color: purple;}
+ to {left: 500px; top: 550px;}
+ from {background-image: url(https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?cs=srgb&dl=pexels-jonas-kakaroto-736230.jpg&fm=jpg)}
+ to {background-image: url(https://st.depositphotos.com/1522993/2984/i/600/depositphotos_29843999-stock-photo-pink-abstract-flower-with-sparkles.jpg);}
+}

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    background-color: brown;
+    color: white;
+    height: 200px;
+
+}
+
+
+
+@media (max-width: 375px) {
+    
+    .wrapper {
+        background-color: blue;
+        }
+}
